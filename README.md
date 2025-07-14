@@ -15,7 +15,6 @@ Simula pontuação, cronômetro, histórico de partidas e exibe as regras do jog
 
 - **Cronômetro** regressivo de 5 minutos  
 - **Contagem de pontos** para Time A e Time B  
-- **Controle de faltas** (opcional)  
 - **Histórico de partidas** com data e pontuação  
 - **Apagar última partida** registrada  
 - **Exibição de regras** em modal  
