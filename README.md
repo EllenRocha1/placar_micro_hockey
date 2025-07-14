@@ -7,7 +7,7 @@ Simula pontuação, cronômetro, histórico de partidas e exibe as regras do jog
 
 ## 📸 Prévia
 
-![Prévia do projeto]("resources/static/assets/Captura de tela 2025-07-14 013854.png")
+![Prévia do projeto](resources/static/assets/Captura de tela 2025-07-14 013854.png)
 
 ---
 
