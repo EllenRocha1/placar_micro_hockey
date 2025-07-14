@@ -1,0 +1,72 @@
+.paineis-controle {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 800px;
+    width: 100%;
+    margin: 40px auto;
+    background-color: #1e2a4a; /* Mesmo fundo do placar */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.controle-time, .controle-geral {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    flex: 1;
+}
+
+.paineis-controle h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: var(--cor_laranja);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+.paineis-controle button {
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+    width: 80%;
+    max-width: 150px;
+    transition: all 0.2s ease-in-out;
+}
+
+.paineis-controle button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.paineis-controle button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* Cores específicas */
+.controle-time button {
+    background-color: var(--cor_laranja);
+    color: var(--cor_texto_claro);
+}
+
+#iniciar-cronometro {
+    background-color: var(--cor_sucesso);
+    color: var(--cor_texto_claro);
+}
+
+#pausar-cronometro {
+    background-color: var(--cor_alerta);
+    color: #000;
+}
+
+#resetar-jogo {
+    background-color: var(--cor_perigo);
+    color: var(--cor_texto_claro);
+}

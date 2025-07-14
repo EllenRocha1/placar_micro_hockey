@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arena Micro-Hockey</title>
+  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="stylesheet" href="../css/placar.css" />
+</head>
+<body>
+  <main>
+    <h1 id="titulo">Arena Micro-Hockey</h1>
+    <div class="placar-fundo">
+      <div class="placar-tela">
+        <div class="cronometro-container">
+          <span id="cronometro">05:00</span>
+        </div>
+
+        <div class="times-container">
+          <div class="nome-time" id="nome-time-a">TIME A</div>
+          <div class="nome-time" id="nome-time-b">TIME B</div>
+        </div>
+
+        <div class="pontos-container">
+          <div class="placar-time" id="pontuacao-a">
+            <div class="digito">0</div>
+            <div class="digito">0</div>
+            <div class="botoes-controle">
+              <button class="botao" data-time="a" data-acao="mais">+</button>
+              <button class="botao" data-time="a" data-acao="menos">-</button>
+            </div>
+          </div>
+          <div class="placar-time" id="pontuacao-b">
+            <div class="digito">0</div>
+            <div class="digito">0</div>
+            <div class="botoes-controle">
+              <button class="botao" data-time="b" data-acao="mais">+</button>
+              <button class="botao" data-time="b" data-acao="menos">-</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="botoes-jogo">
+          <button class="botao" id="btn-iniciar">Iniciar</button>
+          <button class="botao" id="btn-encerrar">Encerrar</button>
+          <button class="botao" id="btn-historico">Histórico</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <button id="btn-info-regras" class="info-flutuante">i</button>
+
+  <div id="modal-regras" class="modal-container">
+    <div class="modal-conteudo">
+      <button class="fechar-modal">&times;</button>
+      <h2>Regras do Micro-Hockey</h2>
+      <h3>Duração da Partida</h3>
+      <p>A partida ocorre em 5 (cinco) minutos.</p>
+      <h3>O Andar da Partida</h3>
+      <p>Robôs em sua metade do ringue. O juiz joga o disco e a partida começa.</p>
+      <p>Marcar gol: mover o disco completamente para dentro do gol adversário.</p>
+      <h3>Morte Súbita</h3>
+      <p>Empates levam a tempo adicional. Quem marcar primeiro vence.</p>
+      <h3>Penalidades</h3>
+      <ul>
+        <li><strong>Conduta Anti-Esportiva:</strong> Remoção do robô infrator.</li>
+        <li><strong>Disco fora do ringue:</strong> Gol para o adversário.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="modal-historico" class="modal-container">
+    <div class="modal-conteudo">
+      <button class="fechar-modal">&times;</button>
+      <h2>Histórico de Partidas</h2>
+      <ul id="lista-historico"></ul>
+       <button class="botao" id="btn-apagar-ultima">Apagar Última</button>
+    </div>
+  </div>
+
+  <div id="popup-encerramento" class="modal-container" style="display: none;">
+  <div class="modal-conteudo">
+    <h2>🏁 Partida Encerrada</h2>
+    <p>O resultado foi salvo no histórico.</p>
+    <button class="botao" id="fechar-popup">Fechar</button>
+  </div>
+</div>
+
+  <script src="../../js/placar.js"></script>
+</body>
+</html>

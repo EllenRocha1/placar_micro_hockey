@@ -1,0 +1,33 @@
+:root {
+    --cor_primaria: #0d1841;
+    --cor_secundaria: #b20f5b;
+    --cor_terciaria: #f4eb74;
+    --cor_texto_claro: #ffffff;
+
+     --cor_sucesso: #28a745;  
+    --cor_alerta: #ffc107;   
+    --cor_perigo: #dc3545; 
+}
+
+body {
+    background-image: url("../assets/placar_fundo.png");
+    background-color: #ffffff; 
+    color: var(--cor_terciaria);
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin-top: 0;
+    padding: 0;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
